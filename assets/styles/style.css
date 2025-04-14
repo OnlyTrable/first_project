@@ -1,12 +1,12 @@
 /* Основні стилі */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+  font-family: TT Hoves;
   padding: 0;
 }
 
 .container {
   width: 80%;
+  higth: 102px;
   margin: 0 auto;
 }
 
