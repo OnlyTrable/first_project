@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <!-- Змінив мову на українську -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мій Перший Сайт</title>
+    <!-- Можеш змінити заголовок -->
+    <!-- Тут пізніше підключимо CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- Додамо посилання на майбутній CSS -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Додамо контейнер для обмеження ширини -->
+        <a href="/" class="logo">Logo</a>
+        <!-- Посилання на головну сторінку з лого -->
+        <nav class="navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- Поки що якірні посилання -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <!-- Секція Hero з id для навігації -->
+        <div class="container">
+          <h1>Welcome to Our Website</h1>
+          <p>Your awesome tagline or description goes here.</p>
+          <button class="cta-button">Learn More</button>
+          <!-- Кнопка заклику до дії -->
+        </div>
+      </section>
+
+      <!-- Секція "Про нас" (About Us) -->
+      <section id="about" class="about-us">
+        <div class="container">
+          <h2>About Us</h2>
+          <div class="about-content">
+            <!-- Додатковий div для гнучкості стилізації -->
+            <p>
+              Тут буде текст, що описує вашу компанію, команду або проект.
+              Розкажіть про вашу місію, цінності та те, що робить вас
+              унікальними. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua.
+            </p>
+            <!-- Якщо на макеті є зображення, можна додати його сюди -->
+            <!-- <img src="assets/images/about-image.jpg" alt="Наша команда"> -->
+          </div>
+        </div>
+      </section>
+      <!-- Кінець секції "Про нас" -->
+
+      <!-- Тут будуть інші секції: Services, Contact -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Твоє Ім'я або Назва Компанії. Всі права захищено.</p>
+        <!-- Можна додати посилання на соцмережі -->
+      </div>
+    </footer>
+
+    <script src="assets/scripts/index.js"></script>
+  </body>
+</html>
