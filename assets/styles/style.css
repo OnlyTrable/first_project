@@ -8,6 +8,7 @@ body {
   width: 80%;
   higth: 102px;
   margin: 0 auto;
+  color: #333333;
 }
 
 /* Шапка */
@@ -41,10 +42,11 @@ header nav ul li a {
 /* Основний вміст */
 .hero {
   text-align: center;
+  font-size: 64px;
   padding: 100px 0;
 }
 
-.hero h1 {
+.hero. {
   font-size: 3em;
   margin-bottom: 20px;
 }
