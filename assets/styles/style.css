@@ -1,51 +1,140 @@
-/* Загальні стилі для body */
+/* Основні стилі */
 body {
-  background-color: #ffffff; /* Білий фон */
-  color: #333333; /* Основний колір тексту (темно-сірий, можна змінити) */
-  margin: 0; /* Прибираємо відступи браузера за замовчуванням */
-  font-family: sans-serif; /* Базовий шрифт (потім можна буде обрати кращий) */
-  /* Додамо ці властивості, щоб футер гарантовано був внизу,
-       навіть якщо контенту мало */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Щоб основний контент займав доступний простір */
-main {
-  flex-grow: 1;
-}
-
-/* Стилі для футера */
-.footer {
-  background-color: #1a1a1a; /* Майже чорний фон */
-  color: #f0f0f0; /* Світлий колір тексту для контрасту */
-  padding: 20px 0; /* Додамо трохи відступів зверху/знизу */
-  text-align: center; /* Вирівнюємо текст по центру */
-}
-
-/* Стилі для контейнера (вже є в HTML, корисний для центрування) */
 .container {
-  width: 90%; /* Ширина контейнера */
-  max-width: 1140px; /* Максимальна ширина */
-  margin-left: auto; /* Автоматичний відступ зліва */
-  margin-right: auto; /* Автоматичний відступ справа (центрує блок) */
-  /* Можна додати внутрішні відступи з боків, якщо потрібно: */
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* --- Поки що залишимо стилі для хедера та hero порожніми, --- */
-/* --- доки не отримаємо більше деталей про їх вигляд --- */
-
-.header {
-  /* Тут будуть стилі хедера */
-  /* Наприклад, відступи: padding: 15px 0; */
+/* Шапка */
+header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Основний вміст */
 .hero {
-  /* Тут будуть стилі секції hero */
-  /* Наприклад, відступи: padding: 50px 0; */
+  text-align: center;
+  padding: 100px 0;
 }
 
-/* --- Кінець стилів для хедера та hero --- */
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.about .images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .images img {
+  width: 30%;
+}
+
+.tasks {
+  padding: 50px 0;
+  background-color: #f0f0f0;
+}
+
+.projects {
+  padding: 50px 0;
+}
+
+.projects .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.projects .gallery img {
+  width: 100%;
+}
+
+.contact {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact form {
+  width: 40%;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact img {
+  width: 40%;
+}
+
+/* Підвал */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}

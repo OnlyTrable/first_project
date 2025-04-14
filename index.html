@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <!-- Змінив мову на українську -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мій Перший Сайт</title>
-    <!-- Можеш змінити заголовок -->
-    <!-- Тут пізніше підключимо CSS -->
+    <title>Nurtown Project</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <!-- Додамо посилання на майбутній CSS -->
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <!-- Додамо контейнер для обмеження ширини -->
-        <a href="/" class="logo">Logo</a>
-        <!-- Посилання на головну сторінку з лого -->
-        <nav class="navigation">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <!-- Поки що якірні посилання -->
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Проекти</a></li>
+            <li><a href="#">Контакти</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section id="home" class="hero">
-        <!-- Секція Hero з id для навігації -->
+      <section class="hero">
         <div class="container">
-          <h1>Welcome to Our Website</h1>
-          <p>Your awesome tagline or description goes here.</p>
-          <button class="cta-button">Learn More</button>
-          <!-- Кнопка заклику до дії -->
+          <h1>PROJECT NURTOWN</h1>
+          <img src="assets/images/hero-image.jpg" alt="Hero Image" />
         </div>
       </section>
 
-      <!-- Секція "Про нас" (About Us) -->
-      <section id="about" class="about-us">
+      <section class="about">
         <div class="container">
-          <h2>About Us</h2>
-          <div class="about-content">
-            <!-- Додатковий div для гнучкості стилізації -->
-            <p>
-              Тут буде текст, що описує вашу компанію, команду або проект.
-              Розкажіть про вашу місію, цінності та те, що робить вас
-              унікальними. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </p>
-            <!-- Якщо на макеті є зображення, можна додати його сюди -->
-            <!-- <img src="assets/images/about-image.jpg" alt="Наша команда"> -->
+          <h2>О компании</h2>
+          <p>Текст про компанію...</p>
+          <div class="images">
+            <img src="assets/images/about-image1.jpg" alt="About Image 1" />
+            <img src="assets/images/about-image2.jpg" alt="About Image 2" />
+            <img src="assets/images/about-image3.jpg" alt="About Image 3" />
           </div>
         </div>
       </section>
-      <!-- Кінець секції "Про нас" -->
 
-      <!-- Тут будуть інші секції: Services, Contact -->
+      <section class="tasks">
+        <div class="container">
+          <h2>Основные задачи</h2>
+          <ol>
+            <li>Задача 1...</li>
+            <li>Задача 2...</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <h2>Наши проекты</h2>
+          <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+          <div class="gallery">
+            <img src="assets/images/project-image1.jpg" alt="Project Image 1" />
+            <img src="assets/images/project-image2.jpg" alt="Project Image 2" />
+            <img src="assets/images/project-image3.jpg" alt="Project Image 3" />
+            <img src="assets/images/project-image4.jpg" alt="Project Image 4" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2>Связаться с нами</h2>
+          <form>
+            <input type="text" placeholder="Ваше ім'я" />
+            <input type="email" placeholder="Ваш email" />
+            <textarea placeholder="Ваше повідомлення"></textarea>
+            <button type="submit">Надіслати</button>
+          </form>
+          <img src="assets/images/contact-image.jpg" alt="Contact Image" />
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <p>&copy; 2024 Твоє Ім'я або Назва Компанії. Всі права захищено.</p>
-        <!-- Можна додати посилання на соцмережі -->
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Проекти</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <p>Адреса: ...</p>
+          <p>Телефон: ...</p>
+          <p>Email: ...</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+        </div>
       </div>
     </footer>
 
